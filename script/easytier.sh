@@ -6,7 +6,7 @@ MIRROR_URLS=(
      "https://fastly.jsdelivr.net/gh/CGG888/EasyTier/script"
      "https://testingcf.jsdelivr.net/gh/CGG888/EasyTier/script"
      "https://quantil.jsdelivr.net/gh/CGG888/EasyTier/script"
-    "https://ghp.ci/https://raw.githubusercontent.com/CGG888/EasyTier/main/script"
+    "https://ghfast.top/https://raw.githubusercontent.com/CGG888/EasyTier/main/script"
     "https://mirror.ghproxy.com/https://raw.githubusercontent.com/CGG888/EasyTier/main/script"
     "https://hub.gitmirror.com/https://raw.githubusercontent.com/CGG888/EasyTier/main/script"
     "https://gh.ddlc.top/https://raw.githubusercontent.com/CGG888/EasyTier/main/script"
