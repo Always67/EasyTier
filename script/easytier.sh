@@ -141,6 +141,7 @@ show_main_menu() {
         echo "EasyTier 是一个网状 P2P VPN，一条命令即可将所有设备连接到同一网络。"
         echo "支持的系统架构: x86_64, aarch64, armv7, arm, mips, mipsel"
         echo "支持的操作系统: Linux (需要 systemd 支持)"
+        echo "指定安装EasyTier 2.0.3版本，如果使用新版本，请自行替换easytier-core，easytier-cli文件"
         
         echo -e "\n${YELLOW_COLOR}注意事项：${RES}"
         echo "1. EasyTier 需要一个专用的空文件夹来安装"

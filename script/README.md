@@ -15,13 +15,13 @@ EasyTier 是一个简单、安全、去中心化的内网穿透 VPN 组网方案
 * TCP 支持：在 UDP 受限的情况下，通过并发 TCP 链接提供可靠的数据传输，优化性能。
 * 高可用性：支持多路径和在检测到高丢包率或网络错误时切换到健康路径。
 * IPV6 支持：支持利用 IPV6 组网。
-* \
 
 ## 系统要求
 
 * 支持的系统：Linux (需要 systemd)
 * 支持的架构：x86_64, aarch64, armv7, arm, mips, mipsel
 * 需要 root 权限运行
+* 指定安装EasyTier 2.0.3版本，如果使用新版本，请自行替换easytier-core，easytier-cli文件
 
 ## 安装方法
 
@@ -30,7 +30,7 @@ EasyTier 是一个简单、安全、去中心化的内网穿透 VPN 组网方案
 
 ##  jsdelivr CDN 镜像源
 
-```javascript
+```bash
 bash <(curl -sL https://gcore.jsdelivr.net/gh/CGG888/EasyTier/script/easytier.sh)
 bash <(curl -sL https://fastly.jsdelivr.net/gh/CGG888/EasyTier/script/easytier.sh)
 bash <(curl -sL https://testingcf.jsdelivr.net/gh/CGG888/EasyTier/script/easytier.sh)
@@ -39,24 +39,11 @@ bash <(curl -sL https://quantil.jsdelivr.net/gh/CGG888/EasyTier/script/easytier.
 
 #### 使用国内镜像加速
 
-
-```bash
-bash <(curl -sL https://mirror.ghproxy.com/https://raw.githubusercontent.com/CGG888/EasyTier/main/script/easytier.sh)
-```
-
-
 ```bash
 bash <(curl -sL https://gh.ddlc.top/https://raw.githubusercontent.com/CGG888/EasyTier/main/script/easytier.sh)
 ```
 
-
-```bash
-bash <(curl -sL https://gh.api.99988866.xyz/https://raw.githubusercontent.com/CGG888/EasyTier/main/script/easytier.sh)
-```
-
-
 Github地址：
-
 
 ```bash
 bash <(curl -sL https://raw.githubusercontent.com/CGG888/EasyTier/main/script/easytier.sh)
