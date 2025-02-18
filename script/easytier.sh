@@ -90,7 +90,30 @@ COMMEND=""
 
 # 修改版本信息定义
 SCRIPT_VERSION="v1.0.0"
-EASYTIER_VERSION="v2.0.3"
+GITHUB_API_URL="https://api.github.com/repos/EasyTier/EasyTier/releases"
+
+# 获取官方最新版本号
+get_latest_version() {
+    local latest_version
+    latest_version=$(curl -s "$GITHUB_API_URL/latest" | grep -o '"tag_name": "[^"]*' | cut -d'"' -f4)
+    if [ -z "$latest_version" ]; then
+        latest_version="v2.0.3"  # 如果获取失败，使用默认版本
+    fi
+    echo "$latest_version"
+}
+
+# 获取所有可用版本
+get_available_versions() {
+    local versions
+    versions=$(curl -s "$GITHUB_API_URL" | grep -o '"tag_name": "[^"]*' | cut -d'"' -f4)
+    if [ -z "$versions" ]; then
+        versions="v2.0.3"  # 如果获取失败，使用默认版本
+    fi
+    echo "$versions"
+}
+
+# 设置安装版本
+EASYTIER_VERSION=$(get_latest_version)
 
 # 在主菜单前添加版本检查函数
 check_version_update() {
@@ -137,11 +160,12 @@ show_main_menu() {
         echo "内核版本: $(uname -r)"
         echo "CPU架构: $(uname -m)"
         
+        # 修改软件信息显示部分
         echo -e "\n${BLUE_COLOR}软件信息：${RES}"
         echo "EasyTier 是一个网状 P2P VPN，一条命令即可将所有设备连接到同一网络。"
         echo "支持的系统架构: x86_64, aarch64, armv7, arm, mips, mipsel"
         echo "支持的操作系统: Linux (需要 systemd 支持)"
-        echo "指定安装EasyTier 2.0.3版本，如果使用新版本，请自行替换easytier-core，easytier-cli文件"
+        echo "默认安装最新版本 ${EASYTIER_VERSION}，可在安装时选择其他版本"
         
         echo -e "\n${YELLOW_COLOR}注意事项：${RES}"
         echo "1. EasyTier 需要一个专用的空文件夹来安装"
