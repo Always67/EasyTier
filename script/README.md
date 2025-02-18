@@ -40,14 +40,14 @@ bash <(curl -sL https://quantil.jsdelivr.net/gh/CGG888/EasyTier/script/easytier.
 #### 使用国内镜像加速
 
 ```bash
-bash <(curl -sL https://ghp.ci/https://raw.githubusercontent.com/CGG888/EasyTier/main/script/easytier.sh)
+bash <(curl -sL https://ghfast.top/https://raw.githubusercontent.com/CGG888/EasyTier/main/script/easytier.sh)
 ```
 
 
 备用镜像
 
 ```bash
-bash <(curl -sL https://mirror.ghproxy.com/https://raw.githubusercontent.com/CGG888/EasyTier/main/script/easytier.sh)
+bash <(curl -sL [https://mirror.ghproxy.com/https://raw.githubusercontent.com/CGG888/EasyTier/main/script/easytier.sh)
 ```
 
 
