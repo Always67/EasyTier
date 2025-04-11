@@ -2,11 +2,11 @@
 
 # 定义镜像源列表
 MIRROR_URLS=(
-     "https://gcore.jsdelivr.net/gh/CGG888/EasyTier/script"
-     "https://fastly.jsdelivr.net/gh/CGG888/EasyTier/script"
-     "https://testingcf.jsdelivr.net/gh/CGG888/EasyTier/script"
-     "https://quantil.jsdelivr.net/gh/CGG888/EasyTier/script"
-    "https://gh.ddlc.top/https://raw.githubusercontent.com/CGG888/EasyTier/main/script"
+     "https://gcore.jsdelivr.net/gh/Always67/EasyTier/script"
+     "https://fastly.jsdelivr.net/gh/Always67/EasyTier/script"
+     "https://testingcf.jsdelivr.net/gh/Always67/EasyTier/script"
+     "https://quantil.jsdelivr.net/gh/Always67/EasyTier/script"
+    "https://gh.ddlc.top/https://raw.githubusercontent.com/Always67/EasyTier/main/script"
     "https://raw.githubusercontent.com/CGG888/EasyTier/main/script"
 )
 
